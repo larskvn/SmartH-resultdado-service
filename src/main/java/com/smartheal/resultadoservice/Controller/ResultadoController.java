@@ -27,8 +27,8 @@ public class ResultadoController {
         return resultadoService.findAllCustom();
     }
 
-    /*
-    @GetMapping("/{id}")
+
+    /*@GetMapping("/{id}")
     public Optional<Resultado> findById(@PathVariable Long id){
         return resultadoService.findById(id);
     }*/
@@ -36,13 +36,13 @@ public class ResultadoController {
     @GetMapping("/byuser/{idUser}")
     public ResponseEntity<List<Resultado>> getByUserId(@PathVariable("idUser") int idUser){
         List<Resultado> resultados= resultadoService.findByUserId(idUser);
-        if (resultados.isEmpty())
-            return ResponseEntity.noContent().build();
+        /*if (resultados.isEmpty())
+            return ResponseEntity.noContent().build();*/
         return ResponseEntity.ok(resultados);
 
     }
 
-    @PostMapping
+    @PostMapping()
     public Resultado add(@RequestBody Resultado r){
         return resultadoService.add(r);
     }
