@@ -4,8 +4,8 @@ spring:
     name: result-service
   cloud:
     config:
-      enable: true
-      uri: http://localhost:8002
+      enabled: true
+      uri: http://localhost:8081
 
 #server.port= 8002
 
