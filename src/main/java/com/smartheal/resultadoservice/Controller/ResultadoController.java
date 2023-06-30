@@ -28,10 +28,10 @@ public class ResultadoController {
     }
 
 
-    /*@GetMapping("/{id}")
+    @GetMapping("/{id}")
     public Optional<Resultado> findById(@PathVariable Long id){
         return resultadoService.findById(id);
-    }*/
+    }
 
     @GetMapping("/byuser/{idUser}")
     public ResponseEntity<List<Resultado>> getByUserId(@PathVariable("idUser") int idUser){
