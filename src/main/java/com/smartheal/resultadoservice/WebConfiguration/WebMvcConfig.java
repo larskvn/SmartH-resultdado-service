@@ -13,7 +13,7 @@ public class WebMvcConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://smartheal.vercel.app","http://localhost:3000")
+                        .allowedOrigins("https://smartheal.vercel.app","http://localhost:3000","http://localhost:8069")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
                         .allowCredentials(true);

@@ -1,0 +1,22 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: result-service
+  datasource:
+    url: jdbc:mysql://smarth-db.chenbke79stf.us-east-1.rds.amazonaws.com:3306/serviceResultado?useSSL=false
+    username: admin
+    password: kl1kan247
+  jpa:
+    datasource-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+#spring:
+#  application:
+#    name: result-service
+#  cloud:
+#    config:
+#      enable: true
+#      uri: http://localhost:8081
